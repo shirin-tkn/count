@@ -1,0 +1,15 @@
+def count_letters_digits(sentence):
+
+    letter = 0
+    digit = 0
+    for i in sentence:
+        if (65 <= ord(i) <= 90) or (97 <= ord(i) <= 122):
+            letter += 1
+        elif 48 <= ord(i) <= 57:
+            digit += 1
+    print(f"The number of letters is: {letter} and The number of digits is: {digit}.")
+
+
+if __name__ == "__main__":
+    sentence = input("Enter a sentence: ")
+    count_letters_digits(sentence)
